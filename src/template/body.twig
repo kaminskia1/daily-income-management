@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>DIM - {{ title }}</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+
+    <body>
+    <div class = "row">
+        <div class="col s18 m8 offset-m2" style="margin-top: 40px">
+            <div class="card">
+                <div class="card-action teal lighten-1 white-text">
+                    <h3>Daily Income Management - {{ title }}</h3>
+                </div>
+                <div class="card-content">
+                    <div class="form-field">
+                        {{ body|raw }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>

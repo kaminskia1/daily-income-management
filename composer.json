@@ -1,0 +1,16 @@
+{
+    "name": "kaminskia1/daily-income-management",
+    "description": "Simple, daily profit / expense tracker",
+    "type": "project",
+    "require": {
+        "twig/twig": "^3.0",
+        "ext-json": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Kaminski",
+            "email": "andrew@kaminski.pw"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+<table class="striped">
+    <thead>
+        <tr>
+            <td>Date</td>
+            <td>Profit</td>
+            <td>Loss</td>
+            <td>Dining</td>
+            <td>Net</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for v in data %}
+            <tr>
+                <td>{{ v.date|raw }}</td>
+                <td style="color: #00e676 ">+{{ v.profit }}</td>
+                <td style="color: #ff1744">-{{ v.loss }}</td>
+                <td style="color: #ff1744">-{{ v.dd }}</td>
+                <td style="color: {{ (v.net >= 0) ? '#00e676' : '#ff1744' }}">{{ (v.net >= 0) ? '+' : '' }}{{ v.net }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<div class="form-field" style="margin-top: 20px">
+    <a href="?view=add"><button class="btn-large waves-effect waves-dark" style="width:100%">Add</button></a>
+</div>
